@@ -1,0 +1,15 @@
+## Serial Ports
+- Change output port in NBS Presentation settings to be COMX (e.g., COM3). 
+- Notes about serial port settings:
+1. Rate: 
+- Default is Windows is 9600. 
+- Higher number means faster transmission of data. Seems like for experiments, 115200 will be best.
+2. Parity
+- Parity is a method of detecting errors in transmission. When parity is used with a serial port, an extra data bit is sent with each data character, arranged so that the number of 1 bits in each character, including the parity bit, is always odd or always even.
+- Currently set to none, may want to revisit. 
+3. Data bits
+- The data bits transferred through a serial port can represent device commands, sensor readings, error messages, and so on. The data can be transferred as either binary data or as text (ASCII) data. Most serial ports use between five and eight data bits. Binary data is typically transmitted as eight bits.
+- Set to 8 for now. 
+4. Stop bits
+- Stop bits sent at the end of every character allow the receiving signal hardware to detect the end of a character and to resynchronize with the character stream. Electronic devices usually use one stop bit. 
+- Set to 1. 
